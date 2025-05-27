@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="icon.png" type="image/png">
+  <link rel="manifest" href="manifest.json">
+
+<link rel="apple-touch-icon" href="icon.png">
+
+  <title>To-Do List 📝</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>To-Do List 📝</h2>
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="✍️ Add new task" required />
+      <input type="date" id="due-date" />
+      <button type="submit">➕ Add Task</button>
+    </form>
+    <div class="sort">
+      <button onclick="sortTasks('asc')">🔼 Sort Asc</button>
+      <button onclick="sortTasks('desc')">🔽 Sort Desc</button>
+    </div>
+    <div id="task-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
